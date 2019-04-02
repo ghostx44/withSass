@@ -1,0 +1,48 @@
+$navbg: #406a82;
+$navul: azure;
+$navhover: darkseagreen;
+
+.nav-wrapper {
+    background-color: $navbg;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        color: $navul;
+    }
+
+    > ul {
+        display: flex;
+    }
+
+    li {
+        width: 100px;
+        position: relative;
+
+        &:hover > ul {
+            display: block;
+        }
+    }
+
+    a {
+        background-color: $navbg;
+        color: inherit;
+        display: block;
+        padding: 10px 10px;
+
+        &:hover {
+            background-color: $navhover;
+        }
+    }
+}
+
+.navigation-dropdown {
+    display: none;
+    position: absolute;
+}
+
+.navigation-right {
+    left: 100%;
+    top: 0;
+}
