@@ -49,11 +49,10 @@ body {
 
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 5px;
+  width: 50px;
   margin: 0 2px;
   background-color: #bbbbbb;
-  border-radius: 50%;
   display: inline-block;
 }
 
