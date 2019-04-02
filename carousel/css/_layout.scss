@@ -15,6 +15,7 @@
 
 .buttons {
     position: absolute;
+    text-align: center;
     height: 100%;
     width: 100%;
     left: 50%;
@@ -31,7 +32,6 @@
         color: white;
         font-weight: bold;
         font-size: 18px;
-        border-radius: 0 3px 3px 0;
         user-select: none;
     
         &:hover {
@@ -39,6 +39,10 @@
         }
     }
     
+    .prev {
+        left: 0;
+        border-radius: 0 3px 3px 0;
+    }
     .next {
         right: 0;
         border-radius: 3px 0 0 3px;
@@ -48,7 +52,7 @@
         cursor: pointer;
         height: 5px;
         width: 50px;
-        margin:0 2px;
+        margin: 0 2px;
         background-color: #bbbbbb;
         display: inline-block;
     
