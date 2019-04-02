@@ -14,7 +14,7 @@ function currentImg(n) {
 
 function showImg(n) {
     var i;
-    var x = document.getElementsByClassName("carousel-wrapper");
+    var x = document.getElementsByClassName("sliderBox");
     var cnt = document.getElementsByClassName("samp");
 
     if (n > x.length) {
@@ -39,7 +39,7 @@ function showImg(n) {
 
 function autoImg() {
     var z;
-    var y = document.getElementsByClassName("carousel-wrapper");
+    var y = document.getElementsByClassName("sliderBox");
     var ind = document.getElementsByClassName("samp");
 
     for (z = 0; z < y.length; z++){

@@ -1,4 +1,4 @@
-.carousel-wrapper {
+.sliderBox {
     margin-top: 20px;
     display: none;
 }
@@ -9,42 +9,55 @@
     margin: auto;
 }
 
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-
-    &:hover {
-        background-color: rgba(0,0,0,0.8)
-    }
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.dot {
-    cursor: pointer;
-    height: 5px;
-    width: 50px;
-    margin:0 2px;
-    background-color: #bbbbbb;
-    display: inline-block;
-
-    &:hover {
-        background-color: #717171;
-    }
-}
-
 .btnActive {
     background-color: #717171;
+}
+
+.buttons {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0%);
+
+    .prev, .next {
+        cursor: pointer;
+        position: fixed;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    
+        &:hover {
+            background-color: rgba(0,0,0,0.8)
+        }
+    }
+    
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    
+    .dot {
+        cursor: pointer;
+        height: 5px;
+        width: 50px;
+        margin:0 2px;
+        background-color: #bbbbbb;
+        display: inline-block;
+    
+        &:hover {
+            background-color: #717171;
+        }
+    }
+
+    .btnActive {
+        background-color: #717171;
+    }
 }
