@@ -39,7 +39,7 @@ body {
 .buttons .prev, .buttons .next {
   cursor: pointer;
   position: fixed;
-  top: -50%;
+  top: -40%;
   width: auto;
   padding: 16px;
   margin-top: -22px;
