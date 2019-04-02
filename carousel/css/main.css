@@ -31,7 +31,7 @@ body {
   height: 100%;
   width: 100%;
   left: 50%;
-  bottom: 0;
+  bottom: -90%;
   -webkit-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
 }
@@ -39,7 +39,7 @@ body {
 .buttons .prev, .buttons .next {
   cursor: pointer;
   position: fixed;
-  top: 50%;
+  top: -50%;
   width: auto;
   padding: 16px;
   margin-top: -22px;
