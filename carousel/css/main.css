@@ -110,9 +110,9 @@ body {
 }
 
 .animateLeft {
-  position: relative;
-  -webkit-animation-name: animateleft 0.4s;
-          animation-name: animateleft 0.4s;
+  display: block;
+  -webkit-animation: animateleft 0.5s;
+          animation: animateleft 0.5s;
 }
 
 @-webkit-keyframes animateright {
@@ -143,11 +143,7 @@ body {
 
 .animateRight {
   display: block;
-  -webkit-animation: animateright 1s;
-          animation: animateright 1s;
-}
-
-.imgActive {
-  display: block;
+  -webkit-animation: animateright 0.5s;
+          animation: animateright 0.5s;
 }
 /*# sourceMappingURL=main.css.map */

@@ -80,8 +80,8 @@
 }
 
 .animateLeft {
-    position: relative;
-    animation-name: animateleft 0.4s;
+    display: block;
+    animation: animateleft 0.5s;
 }
 
 @keyframes animateright {
@@ -98,9 +98,5 @@
 
 .animateRight {
     display: block;
-    animation: animateright 1s;
-}
-
-.imgActive {
-    display: block;
+    animation: animateright 0.5s;
 }

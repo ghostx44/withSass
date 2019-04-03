@@ -33,15 +33,16 @@ function showImg(n) {
         cnt[i].className = cnt[i].className.replace(" btnActive", "");
     }
 
-    
-    //x[slideIndex-1].className += " animateRight";
+    for (i = 0; i < x.length; i++) {
+        x[i].className = x[i].className.replace(" animateRight", "");
+        x[i].className = x[i].className.replace(" animateLeft", "");
+    }
+
     x[slideIndex-1].style.display = "block";
-    //x[slideIndex-1].className = "imgActive";
-    //x[slideIndex-1].className += " animateRight";
-    //x[slideIndex-1].className += " animateRight";
     cnt[slideIndex-1].className += " btnActive";
 
-    
+    console.log(slideIndex-1);
+    //x[slideIndex-1].className += " animateLeft";
 }
 
 
@@ -56,8 +57,13 @@ function autoImg() {
 
     autoIndex++;
 
-    for (i = 0; i < ind.length; i++) {
-        ind[i].className = ind[i].className.replace(" btnActive", "");
+    for (z = 0; z < y.length; z++) {
+        y[z].className = y[z].className.replace(" animateRight", "");
+        y[z].className = y[z].className.replace(" animateLeft", "");
+    }
+
+    for (z = 0; z < ind.length; z++) {
+        ind[z].className = ind[z].className.replace(" btnActive", "");
     }
 
     if (autoIndex > y.length) {
@@ -66,6 +72,7 @@ function autoImg() {
 
     y[autoIndex-1].style.display = "block";
     ind[autoIndex-1].className += " btnActive";
+    y[autoIndex-1].className += " animateRight";
 
     setTimeout(autoImg, 2000);
 }
