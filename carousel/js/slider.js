@@ -8,6 +8,10 @@ function moveImg(n) {
     showImg(slideIndex += n);
 }
 
+function moveLeftImg(n) {
+    leftImg(slideIndex += n);
+}
+
 function currentImg(n) {
     showImg(slideIndex = n);
 }
@@ -40,9 +44,38 @@ function showImg(n) {
 
     x[slideIndex-1].style.display = "block";
     cnt[slideIndex-1].className += " btnActive";
+    x[slideIndex-1].className += " animateRight";
+}
 
-    console.log(slideIndex-1);
-    //x[slideIndex-1].className += " animateLeft";
+function leftImg(n) {
+    var i;
+    var x = document.getElementsByClassName("sliderBox");
+    var cnt = document.getElementsByClassName("samp");
+
+    if (n > x.length) {
+        slideIndex = 1;
+    }
+
+    if (n < 1) {
+        slideIndex = x.length;
+    }
+
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+
+    for (i = 0; i < cnt.length; i++) {
+        cnt[i].className = cnt[i].className.replace(" btnActive", "");
+    }
+
+    for (i = 0; i < x.length; i++) {
+        x[i].className = x[i].className.replace(" animateRight", "");
+        x[i].className = x[i].className.replace(" animateLeft", "");
+    }
+
+    x[slideIndex-1].style.display = "block";
+    cnt[slideIndex-1].className += " btnActive";
+    x[slideIndex-1].className += " animateLeft";
 }
 
 function autoImg() {
