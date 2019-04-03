@@ -142,7 +142,12 @@ body {
 }
 
 .animateRight {
-  -webkit-animation-name: animateright 0.4s;
-          animation-name: animateright 0.4s;
+  display: block;
+  -webkit-animation: animateright 1s;
+          animation: animateright 1s;
+}
+
+.imgActive {
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */

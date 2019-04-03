@@ -97,5 +97,10 @@
 }
 
 .animateRight {
-    animation-name: animateright 0.4s;
+    display: block;
+    animation: animateright 1s;
+}
+
+.imgActive {
+    display: block;
 }

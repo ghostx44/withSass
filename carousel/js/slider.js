@@ -33,9 +33,17 @@ function showImg(n) {
         cnt[i].className = cnt[i].className.replace(" btnActive", "");
     }
 
+    
+    //x[slideIndex-1].className += " animateRight";
     x[slideIndex-1].style.display = "block";
+    //x[slideIndex-1].className = "imgActive";
+    //x[slideIndex-1].className += " animateRight";
+    //x[slideIndex-1].className += " animateRight";
     cnt[slideIndex-1].className += " btnActive";
+
+    
 }
+
 
 function autoImg() {
     var z;
@@ -59,5 +67,5 @@ function autoImg() {
     y[autoIndex-1].style.display = "block";
     ind[autoIndex-1].className += " btnActive";
 
-    setTimeout(autoImg, 3000);
+    setTimeout(autoImg, 2000);
 }
