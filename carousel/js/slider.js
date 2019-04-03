@@ -45,7 +45,6 @@ function showImg(n) {
     //x[slideIndex-1].className += " animateLeft";
 }
 
-
 function autoImg() {
     var z;
     var y = document.getElementsByClassName("sliderBox");
